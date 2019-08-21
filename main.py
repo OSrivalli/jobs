@@ -24,7 +24,22 @@ if BakeryType == 'Samsung':
 			CALLJENKINS ( 'project_a', Item )
 		if Item == 'nikhil':
 			CALLJENKINS ( 'project_b', Item )
+
+else if BakeryType == 'Oppo':
+        for Item in Items:
+                if  Item == 'nandu':
+                        CALLJENKINS ( 'project_a', Item )
+                if Item == 'nikhil':
+                        CALLJENKINS ( 'project_b', Item )
+
+else if BakeryType == 'HTC':
+        for Item in Items:
+                if  Item == 'nandu':
+                        CALLJENKINS ( 'project_a', Item )
+                if Item == 'nikhil':
+                        CALLJENKINS ( 'project_b', Item )
+
 else:
 	print "NOTHING"
 
-	
+
