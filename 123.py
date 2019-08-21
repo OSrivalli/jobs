@@ -29,7 +29,7 @@ item.block_until_complete()
 
 job_name = 'Jenkins_01'
 #curl http://192.168.200.133:8080/job/Jenkins_01/buildWithParameters?token=1234&Type=Device
-curl 'http://192.168.200.133:8080/job/Jenkins_01/buildByToken/buildWithParameters?\&token=1234&Type=Device'
+#curl 'http://192.168.200.133:8080/job/Jenkins_01/buildByToken/buildWithParameters?\&token=1234&Type=Device'
 #wget 'http://192.168.200.133:8080/job/Jenkins_01/buildByToken?\&token=1234'
 #cmd = """curl 'http://192.168.200.133:8080/job/Jenkins_01/build?\&token=1234'"""
 
