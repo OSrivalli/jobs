@@ -33,7 +33,7 @@ job_name = 'Jenkins_01'
 #wget 'http://192.168.200.133:8080/job/Jenkins_01/buildByToken?\&token=1234'
 #cmd = """curl 'http://192.168.200.133:8080/job/Jenkins_01/build?\&token=1234'"""
 
-print(Device)
+#print(Device)
 
 
 #print 'Last build number was:', build.get.number()
