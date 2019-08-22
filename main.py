@@ -21,23 +21,29 @@ Items = sys.argv[2].split ( "," )
 if BakeryType == 'Samsung':
 	for Item in Items:
 		if  Item == 'nandu':
-			CALLJENKINS ( 'project_a', Item )
+			CALLJENKINS ( 'project_nandu', Item )
 		if Item == 'nikhil':
-			CALLJENKINS ( 'project_b', Item )
+			CALLJENKINS ( 'project_nikhil', Item )
+		if Item == 'manikanta':
+                        CALLJENKINS ( 'project_a', Item )
 
 elif BakeryType == 'Oppo':
         for Item in Items:
                 if  Item == 'nandu':
-                        CALLJENKINS ( 'project_a', Item )
+                        CALLJENKINS ( 'project_nandu', Item )
                 if Item == 'nikhil':
+                        CALLJENKINS ( 'project_nikhil', Item )
+		if Item == 'manikanta':
                         CALLJENKINS ( 'project_b', Item )
-
 elif BakeryType == 'HTC':
         for Item in Items:
                 if  Item == 'nandu':
-                        CALLJENKINS ( 'project_a', Item )
+                        CALLJENKINS ( 'project_nandu', Item )
                 if Item == 'nikhil':
-                        CALLJENKINS ( 'project_b', Item )
+                        CALLJENKINS ( 'project_nikhil', Item )
+		if Item == 'manikanta':
+                        CALLJENKINS ( 'project_a', Item )
+
 
 else:
 	print "NOTHING"
