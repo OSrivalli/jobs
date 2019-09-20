@@ -23,33 +23,33 @@ if Device == 'Samsung':
 		if  Item == 'nandu':
 			CALLJENKINS ( 'node-NANDU', Item )
 		if Item == 'nikhil':
-			CALLJENKINS ( 'project_NIKHIL', Item )
+			CALLJENKINS ( 'node-NIKHIL', Item )
 		if Item == 'manikanta':
-                        CALLJENKINS ( 'project_MANIKANTA', Item )
+                        CALLJENKINS ( 'node-MANIKANTA', Item )
                 if Item == 'windows-slave':
-                        CALLJENKINS ( 'project_Ravichandra', Item )
+                        CALLJENKINS ( 'node-Ravichandra', Item )
 
 elif Device == 'Oppo':
         for Item in Slaves:
                 if  Item == 'nandu':
                         CALLJENKINS ( 'node-NANDU', Item )
                 if Item == 'nikhil':
-                        CALLJENKINS ( 'project_NIKHIL', Item )
+                        CALLJENKINS ( 'node-NIKHIL', Item )
                 if Item == 'manikanta':
-                        CALLJENKINS ( 'project_MANIKANTA', Item )
+                        CALLJENKINS ( 'node-MANIKANTA', Item )
                 if Item == 'windows-slave':
-                        CALLJENKINS ( 'project_Ravichandra', Item )
+                        CALLJENKINS ( 'node-Ravichandra', Item )
 
 elif Device == 'HTC':
         for Item in Slaves:
                 if  Item == 'nandu':
                         CALLJENKINS ( 'node-NANDU', Item )
                 if Item == 'nikhil':
-                        CALLJENKINS ( 'project_NIKHIL', Item )
+                        CALLJENKINS ( 'node-NIKHIL', Item )
                 if Item == 'manikanta':
-                        CALLJENKINS ( 'project_MANIKANTA', Item )
+                        CALLJENKINS ( 'node-MANIKANTA', Item )
                 if Item == 'windows-slave':
-                        CALLJENKINS ( 'project_Ravichandra', Item )
+                        CALLJENKINS ( 'node-Ravichandra', Item )
 else:
 	print "NOTHING"
 
