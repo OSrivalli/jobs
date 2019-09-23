@@ -1,0 +1,43 @@
+- job:
+   name: 'configure_auto_test'
+   description: 'Auto configure Jenkins Job to perform automated tests'
+   project-type: freestyle
+   block-downstream: false
+   parameters:
+      - node:
+          name: List of connected nodes
+          type: multi-select
+          ignore-offline-nodes: true
+          allowed-multiselect: false
+      - choice:
+          name: Bakery
+          Description: "List of connected devices"
+          choices:
+            - SAMSUNG
+            - OPPO
+            - LGE
+      - extended-choice:
+          name: Item
+          description: "Available Nodes"
+          type: 'PT_CHECKBOX' 
+          #rule:
+          #   $Bakery == "SAMSUNG"
+          value: nandu,nikhil,manikanta
+          #   groovy-script: "return 'nandu, nikhil, manikanta'"
+
+   builders:
+     - shell: python jenkins_file.py $Device $Slaves
+   scm:
+     - git:
+          url: https://github.com/OSrivalli/jobs
+          credentials:
+            - name: srivalli
+          branches:
+            - '*/master'
+          skip-tag: true
+
+- project:
+    name: Test_Automation
+    jobs:
+      - configure_auto_test
+
