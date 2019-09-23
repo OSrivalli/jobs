@@ -27,6 +27,7 @@
           reply-to: $DEFAULT_REPLYTO
           content-type: both-html-text
           subject: $DEFAULT_SUBJECT
+#          content: Hi<br /><br />${SCRIPT,template="email-template.groovy"}<br /><br />thanks<br />automation team<br />
           content: $DEFAULT_CONTENT
     location:
        adminAddress: "srivalli.oguri@thundersoft.com"

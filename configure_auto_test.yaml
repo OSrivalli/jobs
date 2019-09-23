@@ -10,18 +10,28 @@
           type: multi-select
           ignore-offline-nodes: true
           allowed-multiselect: false
-      - choice:
-          name: Device
-          Description: "List of connected devices"
-          choices:
-            - Samsung
-            - Oppo
-            - HTC
+#     - choice:
+#         name: Device
+#         description: List of available devices
+#         choices:
+#           - Samsung
+#           - Oppo
+#           - HTC
       - extended-choice:
+          name: Device
+          description: "Available options"
+          type: single-select
+          value: Samsung,Oppo,HTC
+      - reactive_choice:
           name: Slaves
-          description: "Available Nodes"
-          type: 'PT_CHECKBOX' 
-          value: nandu,nikhil,manikanta,ravichandra
+          script: |
+              if(Device.equals("Samsung")){ return['nandu','manikanta'] } else if(Device.equals("Oppo")) { return['nikhil','manikanta']} else if(Device.equals("HTC")) {return['nandu','nikhil']} else{return ("Select an item")}
+          projectName: Test_Automation
+          description: Available Node
+          type: multi-select
+           #allowed-multiselect: true
+          referencedParameters: Device
+#          value: nandu,nikhil,manikanta,ravichandra
 
    builders:
      - shell: python jenkins_file.py $Device $Slaves
