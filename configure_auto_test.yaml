@@ -10,14 +10,14 @@
           ignore-offline-nodes: true
           allowed-multiselect: false
       - choice:
-          name: Bakery
+          name: Device
           Description: "List of connected devices"
           choices:
             - SAMSUNG
             - OPPO
             - LGE
       - extended-choice:
-          name: Item
+          name: Slave
           description: "Available Nodes"
           type: 'PT_CHECKBOX' 
           #rule:
