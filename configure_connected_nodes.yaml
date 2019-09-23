@@ -17,6 +17,10 @@
     robotConfig:
         robotResultsColumnEnabled: true
     publishers:
+      - robot:
+          output-path: /home/{label_name}/PycharmProjects/Selenium/Robotframework_Site/Testcases
+          pass-threshold: 0.0
+          only-critical: true
       - email-ext:
 #         recipients: '{recepients}'
           recipients: $DEFAULT_RECIPIENTS
