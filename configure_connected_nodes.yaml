@@ -1,6 +1,7 @@
 - job-template:
     name: 'node-{node_name}'
     node: '{label_name}'
+    auth-token: slave
     builders:
       - shell: |
           cd Selenium/Testcases

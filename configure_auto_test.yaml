@@ -3,6 +3,7 @@
    description: 'Auto configure Jenkins Job to perform automated tests'
    project-type: freestyle
    block-downstream: false
+   auth-token: slave
    parameters:
       - node:
           name: List of connected nodes
@@ -13,17 +14,14 @@
           name: Device
           Description: "List of connected devices"
           choices:
-            - SAMSUNG
-            - OPPO
-            - LGE
+            - Samsung
+            - Oppo
+            - HTC
       - extended-choice:
-          name: Slave
+          name: Slaves
           description: "Available Nodes"
           type: 'PT_CHECKBOX' 
-          #rule:
-          #   $Bakery == "SAMSUNG"
-          value: nandu,nikhil,manikanta
-          #   groovy-script: "return 'nandu, nikhil, manikanta'"
+          value: nandu,nikhil,manikanta,ravichandra
 
    builders:
      - shell: python jenkins_file.py $Device $Slaves
