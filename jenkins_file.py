@@ -21,33 +21,33 @@ Slaves = sys.argv[2].split ( "," )
 if Device == 'Samsung':
 	for Item in Slaves:
 		if  Item == 'nandu':
-			CALLJENKINS ( 'node-NANDU', Item )
+			CALLJENKINS ( 'node-Nandu', Item )
 		if Item == 'nikhil':
-			CALLJENKINS ( 'node-NIKHIL', Item )
+			CALLJENKINS ( 'node-Nikhil', Item )
 		if Item == 'manikanta':
-                        CALLJENKINS ( 'node-MANIKANTA', Item )
+                        CALLJENKINS ( 'node-Manikanta', Item )
                 if Item == 'windows-slave':
                         CALLJENKINS ( 'node-Ravichandra', Item )
 
 elif Device == 'Oppo':
         for Item in Slaves:
                 if  Item == 'nandu':
-                        CALLJENKINS ( 'node-NANDU', Item )
+                        CALLJENKINS ( 'node-Nandu', Item )
                 if Item == 'nikhil':
-                        CALLJENKINS ( 'node-NIKHIL', Item )
+                        CALLJENKINS ( 'node-Nikhil', Item )
                 if Item == 'manikanta':
-                        CALLJENKINS ( 'node-MANIKANTA', Item )
+                        CALLJENKINS ( 'node-Manikanta', Item )
                 if Item == 'windows-slave':
                         CALLJENKINS ( 'node-Ravichandra', Item )
 
 elif Device == 'HTC':
         for Item in Slaves:
                 if  Item == 'nandu':
-                        CALLJENKINS ( 'node-NANDU', Item )
+                        CALLJENKINS ( 'node-Nandu', Item )
                 if Item == 'nikhil':
-                        CALLJENKINS ( 'node-NIKHIL', Item )
+                        CALLJENKINS ( 'node-Nikhil', Item )
                 if Item == 'manikanta':
-                        CALLJENKINS ( 'node-MANIKANTA', Item )
+                        CALLJENKINS ( 'node-Manikanta', Item )
                 if Item == 'windows-slave':
                         CALLJENKINS ( 'node-Ravichandra', Item )
 else:
