@@ -28,6 +28,8 @@ if Device == 'Samsung':
                         CALLJENKINS ( 'node-Manikanta', Item )
                 if Item == 'windows-slave':
                         CALLJENKINS ( 'node-Ravichandra', Item )
+                if Item == 'sravya':
+                        CALLJENKINS ( 'node-Sravya', Item )
 
 elif Device == 'Oppo':
         for Item in Slaves:
@@ -39,6 +41,8 @@ elif Device == 'Oppo':
                         CALLJENKINS ( 'node-Manikanta', Item )
                 if Item == 'windows-slave':
                         CALLJENKINS ( 'node-Ravichandra', Item )
+                if Item == 'sravya':
+                        CALLJENKINS ( 'node-Sravya', Item )
 
 elif Device == 'HTC':
         for Item in Slaves:
@@ -50,6 +54,8 @@ elif Device == 'HTC':
                         CALLJENKINS ( 'node-Manikanta', Item )
                 if Item == 'windows-slave':
                         CALLJENKINS ( 'node-Ravichandra', Item )
+                if Item == 'sravya':
+                        CALLJENKINS ( 'node-Sravya', Item )
 else:
 	print "NOTHING"
 

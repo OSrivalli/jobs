@@ -60,6 +60,10 @@
      - Ravichandra:
 #        recepients: ravi@thundersoft.com
         label_name: ravichandra
+     - Sravya:
+#        recepients: ravi@thundersoft.com
+        label_name: sravya
+
 
     jobs:
       - '01-{node_name}'
