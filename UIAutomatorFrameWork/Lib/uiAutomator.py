@@ -3,7 +3,7 @@ from Utilities import command
 from uiautomator import Device
 from time import sleep
 
-class uiAutomator:
+class uiAutomator(object):
     def __init__(self):
         self.device = None
 
