@@ -1,3 +1,5 @@
+import sys
+sys.path.append("../UIAutomatorFrameWork/")
 from Lib.uiAutomator import uiAutomator
 from time import sleep
 
