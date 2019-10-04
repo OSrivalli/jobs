@@ -1,11 +1,14 @@
-import sys
-sys.path.append("../UIAutomatorFrameWork/")
+import sys,os
+ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(os.path.normpath(os.getcwd() + os.sep + os.pardir))
 from Lib.uiAutomator import uiAutomator
 from time import sleep
 
 class Amazon(uiAutomator):
     def __init__(self):
-        super().__init__()
+        super(Amazon,self).__init__()
+
+
 
     def addItemToCart(self):
         self.openAppMenu()
